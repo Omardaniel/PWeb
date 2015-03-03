@@ -1,0 +1,48 @@
+body {
+     font-size: 1em; /* estilo de tamaño*/
+	 font-family: helvetica;
+	 }
+	 .container {
+	         width: 90%;
+			 margin: 0  5%;
+			
+			 
+			 }
+			 /* Colores */
+			 
+			 .header-container {
+			  border-bottom: 20px solid blue;
+			 }
+			 .footer-container , .main aside{
+			 border-top: 20px solid green;
+			 }
+			 .header-container,
+			 .footer-container,
+			 .main aside{
+			      background: red;
+				  }
+			.title{
+                   color: white;
+				   }
+			/* estilo telefono */
+          nav ul{
+               margin: 0;
+               padding: 0;
+             }			   
+			 
+			 nav a{
+			      display: block;
+			      margin-bottom: 10px;
+				  padding: 15px 0;
+				  text-align: center;
+				  text-decoration: none;
+				  color: white;
+				  background: purple;
+			    }
+			nav a:hover,
+            nav a :visited {
+                 color: black;
+                      }	
+
+            nav a:hover{
+                 text-decoration: underline;			

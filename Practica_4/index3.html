@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <style type="text/css">
+    	div{
+    		border: 3px solid red;
+    	}	
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <script type="text/javascript">
+          //alert("Hola mundo");
+       
+         
+         //alert(operador1);
+         //alert(operador2);
+        function calcula(operacion)
+        {
+         var operador1 = document.calc.operador1.value;
+         var operador2 = document.getElementsByTagName('operador2').value;
+         alert(operador1);
+         alert(operador2);
+         var result = eval(operador1 + operacion + operador2);
+         document.calc.resultados.value = result;
+        }
+       
+
+     </script>
+  </head>
+  <body>
+    
+
+
+    <div class="container text-center">
+
+    	<div class="row">	
+	    
+
+			<div class="col-md-6">
+	    		<form name="calc">
+	    			<label form="operador1"> operador1</label>
+                    <input type="number" value="0" name="operador1" id="operador1"
+                           class="form-control text-center">
+                    <label form="operador2"> operador2</label>
+                    <input type="number" value="0" name="operador2" id="operador2"
+                           class="form-control text-center">       
+                    <input type="button" value="+"
+                           onclick="calcula("+")" 
+                           class="btn btn-success">
+                    <input type="button" value="-" 
+                           class="btn btn-default">
+                    <input type="button" value="*" 
+                           class="btn btn-danger">  
+                    <input type="button" value="/" 
+                           class="btn btn-info"> 
+
+                    <input type="text" value="" name="resultados" placeholder="resultados"
+                      class="form-control text-center">
+                          
+
+	    		</form>
+
+			</div>
+			
+		</div>
+ 
+    </div>
+
+  
+   
+  </body>
+</html>
+
+
+
+
+
