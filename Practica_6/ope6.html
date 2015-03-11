@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <style type="text/css">
+      div{
+        border: 3px solid red;
+      } 
+    </style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <script type="text/javascript">
+          //alert("Hola mundo");
+       
+         
+         //alert(operador1);
+         //alert(operador2);
+        function calcula(operacion)
+        {
+         var operador1 = document.calc.operador1.value;
+         var operador2 = document.getElementById('operador2').value;
+         var iva1= .01;
+         var iva2= .02;
+         var iva3= .03;
+         var suma= "+";
+
+                 if(operador2 >= 1 && operador2 <=3)
+                 {
+                   
+                   var result = eval( operador1 + operacion + iva1);
+                   var result2= eval( operador1 + suma + iva1*operador1);
+                   document.calc.ope.value=result;
+                   document.calc.ope2.value=result2;
+
+                 }
+                   if(operador2 >= 4 && operador2 <=7)
+                 {
+                   
+                   var result = eval( operador1 + operacion + iva2);
+                   var result2= eval( operador1 + suma + iva2*operador1);
+                   document.calc.ope.value=result;
+                   document.calc.ope2.value=result2;
+                 }
+
+                    if(operador2 >= 8)
+                 {
+                   
+                   var result = eval( operador1 + operacion + iva3);
+                   var result2= eval( operador1 + suma + iva3*operador1);
+                   document.calc.ope.value=result;
+                  document.calc.ope2.value=result2;
+                     
+                     
+                 }
+
+      
+        }
+       
+
+
+     </script>
+  </head>
+  <body>
+    
+      <h1>Practica 6</h1>  
+
+    <div class="container text-center">
+
+      <div class="row"> 
+      
+
+
+      <div class="col-md-12">
+          <form name="calc">
+                    
+                    <label form="conver"> Ingresa el monto</label>
+
+                 
+
+                    <input type="number" value="0" name="operador1" id="operador1"
+                           class="form-control text-center">
+
+                    <label form="pesos"> Ingresa los meses</label>
+
+                    <input type="number" value="0" name="operador2" id="operador2"
+                           class="form-control text-center">
+
+                    <input type="button" value="="
+                           onclick="calcula('*')" 
+                           class="btn btn-info"> 
+
+
+                    <input type="text" value="" name="ope"  placeholder="Resultado"
+                           class="form-control text-center">  
+
+           
+                       <label form="pesos"> Total a pagar</label>  
+
+
+                   <input type="text" value="" name="ope2"  placeholder="TotalResultado"
+                           class="form-control text-center"> 
+
+          </form>
+
+      </div>
+
+   </div>
+
+
+ 
+    </div>
+
+  
+   
+  </body>
+</html>
+
+
